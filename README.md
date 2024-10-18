@@ -24,7 +24,7 @@
 建議使用 Notepad++ 或 vs code 編輯，若用內建的記事本編輯需注意用unicode格式存檔。
 
 ## V2 護手輔助程式展示:
-https://youtu.be/pgQHR25vgGY
+https://youtu.be/jLpiSOP9RQk
 
 ## V2 護手輔助程式下載:(將連結複制貼到網址列下載或按右鍵另存)
 http://www.web3d.url.tw/tmp/hand_protector_V2.zip
