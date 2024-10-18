@@ -117,7 +117,7 @@ if __name__=="__main__":
     w.set_window_on_top(keyon_title,350,150)
     w.set_window_alpha(keyon_title, alpha_val=190)
 
-    print(f"版本:\033[33mv.{VERSION}\033[0m 監控視窗:\033[33m{ACTIVE_WIN_TITLE}\033[0m\n"+"-"*50+"\n按 [\033[33mDelete\033[0m] 結束程式 | 按 [\033[33m\\\033[0m] 暫停或重啟\n"+"-"*50)
+    print(f"版本:v.{VERSION} 監控視窗:{ACTIVE_WIN_TITLE}\n"+"-"*50+"\n按 [Delete] 結束程式 | 按 [\\] 暫停或重啟\n"+"-"*50)
     last_seconds=int(time())
     tmp = set()
     while 1:
@@ -126,7 +126,7 @@ if __name__=="__main__":
         if HEAL_ON and loop_flag: PRINT_VAR+=" 補"
         if FORCE_MOVE and loop_flag: PRINT_VAR+=" 移"
         if 'stop' in(str(listener)): exit()
-        print_str=f'啟用狀態:\033[33m{loop_flag}\033[0m | ON:\033[33m{PRINT_VAR}\033[0m'+" "*10
+        print_str=f'啟用狀態:{loop_flag} | ON:{PRINT_VAR}'+" "*10
         print('\r'+print_str,end='',flush=True)
         if ACTIVE_WIN_TITLE=="" or (ACTIVE_WIN_TITLE!="" and ACTIVE_WIN_TITLE in w.active_window_title() and loop_flag):
             current_seconds=int(time())
