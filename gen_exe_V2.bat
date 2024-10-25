@@ -1,0 +1,1 @@
+pyinstaller .\hand_protector_V2.py --onefile --icon=".\hand_protector.ico" 
