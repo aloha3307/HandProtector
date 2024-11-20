@@ -4,7 +4,7 @@ from time import sleep,time
 from Modules.WindowMgr import *
 from os import system
 
-VERSION = "241017a"
+VERSION = "241120a"
 
 def kb_press_eval_key(key_val):
     global edit_flag
@@ -117,7 +117,7 @@ if __name__=="__main__":
     w.set_window_on_top(keyon_title,350,150)
     w.set_window_alpha(keyon_title, alpha_val=190)
 
-    print(f"版本:v.{VERSION} 監控視窗:{ACTIVE_WIN_TITLE}\n"+"-"*50+"\n按 [Delete] 結束程式 | 按 [\\] 暫停或重啟\n"+"-"*50)
+    print(f"版本:v.{VERSION} 監控視窗:{ACTIVE_WIN_TITLE}\n"+"-"*50+f"\n按 [Delete] 結束程式 | 按 [{PAUSE_HOTKEY}] 暫停或重啟\n"+"-"*50)
     last_seconds=int(time())
     tmp = set()
     while 1:
