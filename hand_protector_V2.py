@@ -4,7 +4,7 @@ from time import sleep,time
 from Modules.WindowMgr import *
 from os import system
 
-VERSION = "241120a"
+VERSION = "250120a"
 
 def kb_press_eval_key(key_val):
     global edit_flag
